@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA0D059A1B7EA0320001C0FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0D05991B7EA0320001C0FD /* main.m */; };
+		EA0D059D1B7EA0320001C0FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0D059C1B7EA0320001C0FD /* AppDelegate.m */; };
+		EA0D05A01B7EA0330001C0FD /* JCATMLocator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA0D059E1B7EA0320001C0FD /* JCATMLocator.xcdatamodeld */; };
+		EA0D05A61B7EA0330001C0FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0D05A41B7EA0330001C0FD /* Main.storyboard */; };
+		EA0D05A81B7EA0330001C0FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0D05A71B7EA0330001C0FD /* Images.xcassets */; };
+		EA0D05AB1B7EA0330001C0FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0D05A91B7EA0330001C0FD /* LaunchScreen.xib */; };
+		EA0D05B71B7EA0330001C0FD /* JCATMLocatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0D05B61B7EA0330001C0FD /* JCATMLocatorTests.m */; };
+		EA0D05C21B7EA1C50001C0FD /* JCATMBranchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0D05C11B7EA1C50001C0FD /* JCATMBranchViewController.m */; };
+		EA0D05C71B7EA2F10001C0FD /* BackendUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0D05C61B7EA2F10001C0FD /* BackendUtility.m */; };
+		EA0D05CA1B7EFC920001C0FD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0D05C91B7EFC920001C0FD /* MapKit.framework */; };
+		EA0D05CD1B7EFD3C0001C0FD /* JCATMBranchAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0D05CC1B7EFD3C0001C0FD /* JCATMBranchAnnotation.m */; };
+		EA0D05D21B7EFE810001C0FD /* JCATMBranch.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0D05D11B7EFE810001C0FD /* JCATMBranch.m */; };
+		EA21A7F51B7FB09700AB88D6 /* JCATMBranchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA21A7F41B7FB09700AB88D6 /* JCATMBranchDetailViewController.m */; };
+		EA9365761B7F7EB200C42D10 /* JCATMBranchDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9365751B7F7EB200C42D10 /* JCATMBranchDataManager.m */; };
+		EA9365781B7F8FE000C42D10 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9365771B7F8FE000C42D10 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA0D05B11B7EA0330001C0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA0D058C1B7EA0320001C0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA0D05931B7EA0320001C0FD;
+			remoteInfo = JCATMLocator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA0D05941B7EA0320001C0FD /* JCATMLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCATMLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0D05981B7EA0320001C0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA0D05991B7EA0320001C0FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA0D059B1B7EA0320001C0FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA0D059C1B7EA0320001C0FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA0D059F1B7EA0320001C0FD /* JCATMLocator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JCATMLocator.xcdatamodel; sourceTree = "<group>"; };
+		EA0D05A51B7EA0330001C0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA0D05A71B7EA0330001C0FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA0D05AA1B7EA0330001C0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EA0D05B01B7EA0330001C0FD /* JCATMLocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCATMLocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0D05B51B7EA0330001C0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA0D05B61B7EA0330001C0FD /* JCATMLocatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCATMLocatorTests.m; sourceTree = "<group>"; };
+		EA0D05C01B7EA1C50001C0FD /* JCATMBranchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCATMBranchViewController.h; path = ViewController/ATMBranch/JCATMBranchViewController.h; sourceTree = "<group>"; };
+		EA0D05C11B7EA1C50001C0FD /* JCATMBranchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCATMBranchViewController.m; path = ViewController/ATMBranch/JCATMBranchViewController.m; sourceTree = "<group>"; };
+		EA0D05C51B7EA2F10001C0FD /* BackendUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackendUtility.h; path = BackendUtility/BackendUtility.h; sourceTree = "<group>"; };
+		EA0D05C61B7EA2F10001C0FD /* BackendUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackendUtility.m; path = BackendUtility/BackendUtility.m; sourceTree = "<group>"; };
+		EA0D05C91B7EFC920001C0FD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EA0D05CB1B7EFD3C0001C0FD /* JCATMBranchAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCATMBranchAnnotation.h; path = JCATMLocator/Model/JCATMBranchAnnotation.h; sourceTree = "<group>"; };
+		EA0D05CC1B7EFD3C0001C0FD /* JCATMBranchAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCATMBranchAnnotation.m; path = JCATMLocator/Model/JCATMBranchAnnotation.m; sourceTree = "<group>"; };
+		EA0D05D01B7EFE810001C0FD /* JCATMBranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCATMBranch.h; path = JCATMLocator/Model/JCATMBranch.h; sourceTree = "<group>"; };
+		EA0D05D11B7EFE810001C0FD /* JCATMBranch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCATMBranch.m; path = JCATMLocator/Model/JCATMBranch.m; sourceTree = "<group>"; };
+		EA21A7F31B7FB09700AB88D6 /* JCATMBranchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCATMBranchDetailViewController.h; path = ViewController/ATMBranchDetail/JCATMBranchDetailViewController.h; sourceTree = "<group>"; };
+		EA21A7F41B7FB09700AB88D6 /* JCATMBranchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCATMBranchDetailViewController.m; path = ViewController/ATMBranchDetail/JCATMBranchDetailViewController.m; sourceTree = "<group>"; };
+		EA9365741B7F7EB200C42D10 /* JCATMBranchDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCATMBranchDataManager.h; path = BackendUtility/JCATMBranchDataManager.h; sourceTree = "<group>"; };
+		EA9365751B7F7EB200C42D10 /* JCATMBranchDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCATMBranchDataManager.m; path = BackendUtility/JCATMBranchDataManager.m; sourceTree = "<group>"; };
+		EA9365771B7F8FE000C42D10 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA0D05911B7EA0320001C0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9365781B7F8FE000C42D10 /* CoreLocation.framework in Frameworks */,
+				EA0D05CA1B7EFC920001C0FD /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0D05AD1B7EA0330001C0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA0D058B1B7EA0320001C0FD = {
+			isa = PBXGroup;
+			children = (
+				EA0D05CF1B7EFD5B0001C0FD /* Framework */,
+				EA0D05961B7EA0320001C0FD /* JCATMLocator */,
+				EA0D05B31B7EA0330001C0FD /* JCATMLocatorTests */,
+				EA0D05951B7EA0320001C0FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA0D05951B7EA0320001C0FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA0D05941B7EA0320001C0FD /* JCATMLocator.app */,
+				EA0D05B01B7EA0330001C0FD /* JCATMLocatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA0D05961B7EA0320001C0FD /* JCATMLocator */ = {
+			isa = PBXGroup;
+			children = (
+				EA0D05CE1B7EFD510001C0FD /* Model */,
+				EA0D05C31B7EA1CB0001C0FD /* ViewController */,
+				EA0D05C81B7EA3060001C0FD /* BackendUtility */,
+				EA0D059B1B7EA0320001C0FD /* AppDelegate.h */,
+				EA0D059C1B7EA0320001C0FD /* AppDelegate.m */,
+				EA0D05A41B7EA0330001C0FD /* Main.storyboard */,
+				EA0D05A71B7EA0330001C0FD /* Images.xcassets */,
+				EA0D05A91B7EA0330001C0FD /* LaunchScreen.xib */,
+				EA0D059E1B7EA0320001C0FD /* JCATMLocator.xcdatamodeld */,
+				EA0D05971B7EA0320001C0FD /* Supporting Files */,
+			);
+			path = JCATMLocator;
+			sourceTree = "<group>";
+		};
+		EA0D05971B7EA0320001C0FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA0D05981B7EA0320001C0FD /* Info.plist */,
+				EA0D05991B7EA0320001C0FD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA0D05B31B7EA0330001C0FD /* JCATMLocatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA0D05B61B7EA0330001C0FD /* JCATMLocatorTests.m */,
+				EA0D05B41B7EA0330001C0FD /* Supporting Files */,
+			);
+			path = JCATMLocatorTests;
+			sourceTree = "<group>";
+		};
+		EA0D05B41B7EA0330001C0FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA0D05B51B7EA0330001C0FD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA0D05C31B7EA1CB0001C0FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA0D05C41B7EA1D80001C0FD /* ATMBranch */,
+				EA21A7F61B7FB0A600AB88D6 /* ATMBranchDetail */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		EA0D05C41B7EA1D80001C0FD /* ATMBranch */ = {
+			isa = PBXGroup;
+			children = (
+				EA0D05C01B7EA1C50001C0FD /* JCATMBranchViewController.h */,
+				EA0D05C11B7EA1C50001C0FD /* JCATMBranchViewController.m */,
+			);
+			name = ATMBranch;
+			sourceTree = "<group>";
+		};
+		EA0D05C81B7EA3060001C0FD /* BackendUtility */ = {
+			isa = PBXGroup;
+			children = (
+				EA0D05C51B7EA2F10001C0FD /* BackendUtility.h */,
+				EA0D05C61B7EA2F10001C0FD /* BackendUtility.m */,
+				EA9365741B7F7EB200C42D10 /* JCATMBranchDataManager.h */,
+				EA9365751B7F7EB200C42D10 /* JCATMBranchDataManager.m */,
+			);
+			name = BackendUtility;
+			sourceTree = "<group>";
+		};
+		EA0D05CE1B7EFD510001C0FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA0D05CB1B7EFD3C0001C0FD /* JCATMBranchAnnotation.h */,
+				EA0D05CC1B7EFD3C0001C0FD /* JCATMBranchAnnotation.m */,
+				EA0D05D01B7EFE810001C0FD /* JCATMBranch.h */,
+				EA0D05D11B7EFE810001C0FD /* JCATMBranch.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EA0D05CF1B7EFD5B0001C0FD /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				EA9365771B7F8FE000C42D10 /* CoreLocation.framework */,
+				EA0D05C91B7EFC920001C0FD /* MapKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		EA21A7F61B7FB0A600AB88D6 /* ATMBranchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EA21A7F31B7FB09700AB88D6 /* JCATMBranchDetailViewController.h */,
+				EA21A7F41B7FB09700AB88D6 /* JCATMBranchDetailViewController.m */,
+			);
+			name = ATMBranchDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA0D05931B7EA0320001C0FD /* JCATMLocator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0D05BA1B7EA0330001C0FD /* Build configuration list for PBXNativeTarget "JCATMLocator" */;
+			buildPhases = (
+				EA0D05901B7EA0320001C0FD /* Sources */,
+				EA0D05911B7EA0320001C0FD /* Frameworks */,
+				EA0D05921B7EA0320001C0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCATMLocator;
+			productName = JCATMLocator;
+			productReference = EA0D05941B7EA0320001C0FD /* JCATMLocator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA0D05AF1B7EA0330001C0FD /* JCATMLocatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0D05BD1B7EA0330001C0FD /* Build configuration list for PBXNativeTarget "JCATMLocatorTests" */;
+			buildPhases = (
+				EA0D05AC1B7EA0330001C0FD /* Sources */,
+				EA0D05AD1B7EA0330001C0FD /* Frameworks */,
+				EA0D05AE1B7EA0330001C0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA0D05B21B7EA0330001C0FD /* PBXTargetDependency */,
+			);
+			name = JCATMLocatorTests;
+			productName = JCATMLocatorTests;
+			productReference = EA0D05B01B7EA0330001C0FD /* JCATMLocatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA0D058C1B7EA0320001C0FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Durgesh Gupta";
+				TargetAttributes = {
+					EA0D05931B7EA0320001C0FD = {
+						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					EA0D05AF1B7EA0330001C0FD = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = EA0D05931B7EA0320001C0FD;
+					};
+				};
+			};
+			buildConfigurationList = EA0D058F1B7EA0320001C0FD /* Build configuration list for PBXProject "JCATMLocator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA0D058B1B7EA0320001C0FD;
+			productRefGroup = EA0D05951B7EA0320001C0FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA0D05931B7EA0320001C0FD /* JCATMLocator */,
+				EA0D05AF1B7EA0330001C0FD /* JCATMLocatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA0D05921B7EA0320001C0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0D05A61B7EA0330001C0FD /* Main.storyboard in Resources */,
+				EA0D05AB1B7EA0330001C0FD /* LaunchScreen.xib in Resources */,
+				EA0D05A81B7EA0330001C0FD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0D05AE1B7EA0330001C0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA0D05901B7EA0320001C0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0D05A01B7EA0330001C0FD /* JCATMLocator.xcdatamodeld in Sources */,
+				EA0D05D21B7EFE810001C0FD /* JCATMBranch.m in Sources */,
+				EA21A7F51B7FB09700AB88D6 /* JCATMBranchDetailViewController.m in Sources */,
+				EA0D05C71B7EA2F10001C0FD /* BackendUtility.m in Sources */,
+				EA0D059D1B7EA0320001C0FD /* AppDelegate.m in Sources */,
+				EA0D05C21B7EA1C50001C0FD /* JCATMBranchViewController.m in Sources */,
+				EA9365761B7F7EB200C42D10 /* JCATMBranchDataManager.m in Sources */,
+				EA0D059A1B7EA0320001C0FD /* main.m in Sources */,
+				EA0D05CD1B7EFD3C0001C0FD /* JCATMBranchAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0D05AC1B7EA0330001C0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0D05B71B7EA0330001C0FD /* JCATMLocatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA0D05B21B7EA0330001C0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA0D05931B7EA0320001C0FD /* JCATMLocator */;
+			targetProxy = EA0D05B11B7EA0330001C0FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA0D05A41B7EA0330001C0FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA0D05A51B7EA0330001C0FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA0D05A91B7EA0330001C0FD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA0D05AA1B7EA0330001C0FD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA0D05B81B7EA0330001C0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA0D05B91B7EA0330001C0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA0D05BB1B7EA0330001C0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JCATMLocator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA0D05BC1B7EA0330001C0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JCATMLocator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EA0D05BE1B7EA0330001C0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JCATMLocatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCATMLocator.app/JCATMLocator";
+			};
+			name = Debug;
+		};
+		EA0D05BF1B7EA0330001C0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JCATMLocatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCATMLocator.app/JCATMLocator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA0D058F1B7EA0320001C0FD /* Build configuration list for PBXProject "JCATMLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0D05B81B7EA0330001C0FD /* Debug */,
+				EA0D05B91B7EA0330001C0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0D05BA1B7EA0330001C0FD /* Build configuration list for PBXNativeTarget "JCATMLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0D05BB1B7EA0330001C0FD /* Debug */,
+				EA0D05BC1B7EA0330001C0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0D05BD1B7EA0330001C0FD /* Build configuration list for PBXNativeTarget "JCATMLocatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0D05BE1B7EA0330001C0FD /* Debug */,
+				EA0D05BF1B7EA0330001C0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA0D059E1B7EA0320001C0FD /* JCATMLocator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA0D059F1B7EA0320001C0FD /* JCATMLocator.xcdatamodel */,
+			);
+			currentVersion = EA0D059F1B7EA0320001C0FD /* JCATMLocator.xcdatamodel */;
+			path = JCATMLocator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA0D058C1B7EA0320001C0FD /* Project object */;
+}
