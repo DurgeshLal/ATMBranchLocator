@@ -99,7 +99,7 @@
     
     __weak JCATMBranchViewController *weakSelf = self;
     UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:@"Error in fetching ATM/Branch. Please try again: For testing go to Edit Scheme--> Option--> Set Default Location"
+                                  alertControllerWithTitle:@"Simulator Specific Error:1.For testing go to Edit Scheme--> Option--> Set Default Location 1. GOTO simulator debug--> Location --> Apple"
                                   message:[error localizedDescription]
                                   preferredStyle:UIAlertControllerStyleAlert];
     
@@ -179,6 +179,46 @@
 
 }
 
+#pragma mark - Action sheet
+
+- (IBAction)onFilerClicked:(id)sender
+{
+    UIActionSheet *filterOptionActionSheet = [[UIActionSheet alloc] initWithTitle:@"Location Options" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"ATMs", @"Branches", @"All", nil];
+    
+    [filterOptionActionSheet showFromBarButtonItem:sender animated:YES];
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == [actionSheet cancelButtonIndex])
+    {
+        return;
+    }
+    
+    if(buttonIndex == 0)
+    {
+        NSPredicate *atmPredicate = [NSPredicate predicateWithFormat:@"locType == \"atm\""];
+        NSArray *atmArray = [dataSourceArray filteredArrayUsingPredicate:atmPredicate];
+        
+        [self successWithData:atmArray];
+        return;
+    }
+    
+    if(buttonIndex == 1)
+    {
+        NSPredicate *branchPredicate = [NSPredicate predicateWithFormat:@"locType == \"branch\""];
+        NSArray *branchArray = [dataSourceArray filteredArrayUsingPredicate:branchPredicate];
+        
+        [self successWithData:branchArray];
+        return;
+    }
+    
+    if(buttonIndex == 2)
+    {
+        [self successWithData:dataSourceArray];
+        return;
+    }
+}
 
 
 @end

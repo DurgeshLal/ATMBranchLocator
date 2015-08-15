@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JCATMBranchViewController : UIViewController
+@interface JCATMBranchViewController : UIViewController<UIActionSheetDelegate>
 
 @end
